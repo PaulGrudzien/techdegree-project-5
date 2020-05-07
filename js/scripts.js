@@ -152,8 +152,8 @@ function showModal(person, card) {
 /**
  * Search profil by name and show their cards
  */
-function searchProfil() {
-    this.preventDefault();
+function searchProfil(event) {
+    event.preventDefault();
     const name = document.getElementById("search-input").value;
     const regExp = new RegExp(name, 'i');
     clearGallery()
